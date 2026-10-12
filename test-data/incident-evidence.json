@@ -1,0 +1,19 @@
+{
+  "incident": {
+    "incident_id": "INC-DAY03-001",
+    "type": "application_unreachable",
+    "severity": "high",
+    "status": "open",
+    "failure_reason": "Connection refused",
+    "timestamp": "2026-10-12T10:00:00Z"
+  },
+  "health_check": {
+    "endpoint": "/health",
+    "http_status": null,
+    "error": "Connection refused on port 8000"
+  },
+  "deployment": {
+    "platform": "AWS Elastic Beanstalk",
+    "recent_change": "New application version deployed"
+  }
+}
