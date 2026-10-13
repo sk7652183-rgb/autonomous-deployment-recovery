@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-13T09:11:42.099044+00:00",
+  "status": "approved_not_executed",
+  "root_cause": "Intentional application exception",
+  "recommended_action": "manual_investigation",
+  "requires_human_approval": true,
+  "executed": false,
+  "approval": "human_approved",
+  "health_check": {
+    "url": "http://127.0.0.1:8000/health",
+    "healthy": true,
+    "http_status": 200,
+    "details": "{\"status\":\"healthy\"}"
+  },
+  "application_healthy": true
+}

@@ -1,0 +1,25 @@
+{
+  "incident": {
+    "incident_id": "INC-DAY04-001",
+    "type": "simulated_endpoint_failure",
+    "severity": "test",
+    "status": "under_investigation"
+  },
+  "scenario": "Controlled test. The /failure endpoint intentionally raises an exception. This does not necessarily mean the application process has failed.",
+  "diagnostics": {
+    "timestamp": "2026-10-13T08:59:57.475446+00:00",
+    "health_endpoint": {
+      "url": "http://127.0.0.1:8000/health",
+      "http_status": 200,
+      "healthy": true,
+      "details": "{\"status\":\"healthy\"}"
+    },
+    "failure_endpoint": {
+      "url": "http://127.0.0.1:8000/failure",
+      "http_status": 500,
+      "healthy": false,
+      "details": "Internal Server Error"
+    }
+  },
+  "requires_human_approval": true
+}
